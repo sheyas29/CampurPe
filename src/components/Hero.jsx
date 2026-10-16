@@ -44,62 +44,9 @@ const CheckIcon = ({ color }) => (
     <path d="M5 12.5l5 5L19.500 7" />
   </svg>
 );
-const BankIcon = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" {...stroke(BLUE, 2)}>
-    <path d="M3 9l9-5 9 5H3z" />
-    <path d="M5 11v7M9.500 11v7M14.500 11v7M19 11v7M3 21h18" />
-  </svg>
-);
-const CapIcon = () => (
-  <svg width="23" height="23" viewBox="0 0 24 24" fill={BLUE}>
-    <path d="M12 3L1 9l11 6 9-4.900V16h2V9L12 3z" />
-    <path d="M5 13.200V17c0 1.700 3.100 3 7 3s7-1.300 7-3v-3.800l-7 3.800-7-3.800z" />
-  </svg>
-);
-const BriefcaseIcon = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill={BLUE}>
-    <path d="M9 4a2 2 0 00-2 2v1H4a2 2 0 00-2 2v3h20V9a2 2 0 00-2-2h-3V6a2 2 0 00-2-2H9zm0 2h6v1H9V6z" />
-    <path d="M2 14v4a2 2 0 002 2h16a2 2 0 002-2v-4h-8v1.500h-4V14H2z" />
-  </svg>
-);
-const RobotIcon = () => (
-  <svg width="26" height="22" viewBox="0 0 26 22" fill="none">
-    <circle cx="13" cy="2.500" r="2" fill="#1F5FEB" />
-    <path d="M13 4v3" stroke="#1F5FEB" strokeWidth="2" />
-    <rect x="3" y="7" width="20" height="14" rx="6" fill="#1F5FEB" />
-    <rect x="0" y="11" width="3" height="6" rx="1.500" fill="#1F5FEB" />
-    <rect x="23" y="11" width="3" height="6" rx="1.500" fill="#1F5FEB" />
-    <circle cx="9.500" cy="14" r="2" fill="#fff" />
-    <circle cx="16.500" cy="14" r="2" fill="#fff" />
-  </svg>
-);
-const WhatsAppIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="11" fill="#2FCB5E" />
-    <path
-      d="M12 5.200a6.800 6.800 0 00-5.900 10.200L5.200 18.800l3.500-.9A6.800 6.800 0 1012 5.200zm3.400 9.200c-.2.500-1 .9-1.400.9-.4.100-.8.100-2.500-.5a8 8 0 01-3.400-3c-.3-.4-.8-1.200-.8-2s.4-1.200.6-1.400c.1-.2.300-.2.400-.2h.3c.1 0 .3 0 .4.300l.6 1.500c.1.100.1.300 0 .4l-.2.300-.3.300c-.1.100-.2.200-.1.400.3.500.7 1 1.200 1.400.5.400 1 .7 1.200.8.200.1.300.1.400-.1l.5-.7c.1-.2.300-.2.400-.1l1.400.7c.2.100.3.100.3.300.1.200.1.600-.1 1z"
-      fill="#fff"
-    />
-  </svg>
-);
-const BoltIcon = () => (
-  <svg width="14" height="18" viewBox="0 0 14 18" fill="#8B3FF0">
-    <path d="M9 0L0 10h5.500L4 18l10-11H8.500L9 0z" />
-  </svg>
-);
-const SparkleIcon = ({ flip }) => (
-  <svg
-    width="26"
-    height="22"
-    viewBox="0 0 26 22"
-    fill="#1E3FB4"
-    style={flip ? { transform: 'scaleX(-1)' } : undefined}
-  >
-    <path d="M10 3c.7 5 2.500 7 7.500 8-5 1-6.800 3-7.500 8-.7-5-2.500-7-7.500-8C7.500 10 9.300 8 10 3z" />
-    <path d="M20.500 0c.3 2.200 1 3 3.200 3.500-2.200.5-2.900 1.300-3.200 3.500-.3-2.200-1-3-3.200-3.500 2.200-.5 2.900-1.300 3.200-3.500z" />
-    <path d="M21 14c.3 1.800.9 2.400 2.700 2.800-1.800.4-2.400 1-2.700 2.800-.3-1.800-.9-2.400-2.700-2.800 1.800-.4 2.400-1 2.700-2.800z" />
-  </svg>
-);
+
+
+
 
 /* stat icons */
 const statStroke = (c) => stroke(c, 1.8);
@@ -236,7 +183,7 @@ const HireArt = () => (
 const DEFAULT_CARDS = [
   {
     key: 'college',
-    icon: <BankIcon />,
+    icon: <img src="College Pillar Icon Badge.svg" alt="college" />,
     title: 'College',
     badge: 'Coming Soon',
     desc: 'Explore colleges, courses,fees, placements & more',
@@ -251,7 +198,7 @@ const DEFAULT_CARDS = [
   },
   {
     key: 'job',
-    icon: <CapIcon />,
+    icon: <img src="scholar-cap.svg" alt="scholar-cap" />,
     title: "I'm Looking for a Job",
     badge: 'Available Now',
     desc: "Upload your resume. We'll find jobs that fit you.",
@@ -266,7 +213,7 @@ const DEFAULT_CARDS = [
   },
   {
     key: 'hire',
-    icon: <BriefcaseIcon />,
+    icon: <img src="Briefcase Icon Badge.svg" alt="hire" />,
     title: "I'm Hiring",
     badge: 'Coming Soon',
     desc: 'Connect with colleges and find candidates — from students to graduates.',
@@ -321,7 +268,7 @@ export default function HeroSection({
   cards = DEFAULT_CARDS,
   stats = DEFAULT_STATS,
   partners, // [{ name, src }] — falls back to text placeholders
-  onCardClick = () => {},
+  onCardClick = () => { },
   className = '',
 }) {
   return (
@@ -343,7 +290,7 @@ export default function HeroSection({
             className={`absolute left-[20px] top-[75px] hidden h-[107px] w-[203px] rounded-[20px] border border-[#4E63E8] bg-white px-[19px] pt-[16px] text-left lg:block ${FLOAT_SHADOW}`}
           >
             <div className="flex items-center gap-2">
-              <WhatsAppIcon />
+              <img src="/watsapp-logo.svg" alt="whatsapp" />
               <span className="text-[15px] font-medium leading-none text-[#D9620B]">
                 WhatsApp Alert
               </span>
@@ -361,7 +308,7 @@ export default function HeroSection({
             className={`absolute right-[-7px] top-[68px] hidden h-[140px] w-[225px] rounded-[24px] border border-[#4E63E8] bg-white px-[21px] pt-[20px] text-left lg:block ${FLOAT_SHADOW}`}
           >
             <div className="flex items-center gap-1.5">
-              <BoltIcon />
+              <img src="lightning-icon.svg" alt="bolt" />
               <span className="text-[15px] font-medium leading-none text-[#8B3FF0]">
                 Resume Builder
               </span>
@@ -377,7 +324,7 @@ export default function HeroSection({
 
           {/* pill */}
           <span className="inline-flex h-[37px] items-center gap-2 rounded-full bg-[#FFF6E8] px-[20px] text-[15px] font-medium text-[#1F5FEB] shadow-[0_2px_14px_rgba(255,214,150,0.35)]">
-            <RobotIcon />
+            <img src="ai-robo-icon.svg" alt="ai robo" />
             AI-Powered Campus Assistant
           </span>
 
@@ -395,7 +342,7 @@ export default function HeroSection({
 
           <div className="mt-[14px] flex items-center gap-[37px]">
             <span className="hidden sm:block">
-              <SparkleIcon />
+              <img src="Left Double Sparkle Icon.svg" alt="left-sparkle" />
             </span>
             <h2
               className="text-[20px] font-medium leading-[34px] sm:text-[26px]"
@@ -404,7 +351,7 @@ export default function HeroSection({
               What are you looking for?
             </h2>
             <span className="hidden sm:block">
-              <SparkleIcon flip />
+              <img src="Right Double Sparkle Icon.svg" alt="right-sparkle" />
             </span>
           </div>
 
@@ -549,22 +496,22 @@ export default function HeroSection({
           <div className="mt-6 flex flex-wrap items-center justify-center gap-x-14 gap-y-5">
             {partners && partners.length
               ? partners.map((p) => (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    key={p.name}
-                    src={p.src}
-                    alt={p.name}
-                    className="h-12 w-auto object-contain"
-                  />
-                ))
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  key={p.name}
+                  src={p.src}
+                  alt={p.name}
+                  className="h-12 w-auto object-contain"
+                />
+              ))
               : DEFAULT_PARTNERS.map((name) => (
-                  <span
-                    key={name}
-                    className="text-[20px] font-bold tracking-tight text-slate-700"
-                  >
-                    {name}
-                  </span>
-                ))}
+                <span
+                  key={name}
+                  className="text-[20px] font-bold tracking-tight text-slate-700"
+                >
+                  {name}
+                </span>
+              ))}
           </div>
         </div>
       </div>

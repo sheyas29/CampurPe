@@ -12,9 +12,7 @@ const phones = [
 
 
 const N = phones.length;
-
 const GAP = 0.08;
-
 const SLOTS = {
   0: { scale: 1, opacity: 1 },
   1: { scale: 0.82, opacity: 0.96 },
@@ -46,16 +44,6 @@ export default function AppShowcase() {
     const nextIndex = ((i % N) + N) % N;
     setPreviousActive(activeIndex);
     setActiveIndex(nextIndex);
-  };
-
-  const prev = () => go(activeIndex - 1);
-
-  const next = () => go(activeIndex + 1);
-
-  const onKeyDown = (e) => {
-    if (e.key === 'ArrowLeft') prev();
-
-    if (e.key === 'ArrowRight') next();
   };
 
   const onTouchStart = (e) => {
@@ -140,11 +128,9 @@ export default function AppShowcase() {
         <div
           ref={stageRef}
           className="relative mt-12 w-full max-w-6xl mx-auto py-6 outline-none"
-          tabIndex={0}
           role="region"
           aria-roledescription="carousel"
           aria-label="App screenshots"
-          onKeyDown={onKeyDown}
           onTouchStart={onTouchStart}
           onTouchEnd={onTouchEnd}
         >
@@ -186,25 +172,7 @@ export default function AppShowcase() {
 
         {/* Controls */}
 
-        <div className="mt-4 flex items-center justify-center gap-5">
-          <button
-            onClick={prev}
-            aria-label="Previous slide"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#1E293B] shadow-md ring-1 ring-slate-200 transition hover:bg-slate-50 active:scale-95"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </button>
-
+        <div className="mt-4 flex items-center justify-center">
           <div className="flex items-center gap-3">
             {phones.map((_, idx) => (
               <button
@@ -219,24 +187,6 @@ export default function AppShowcase() {
               />
             ))}
           </div>
-
-          <button
-            onClick={next}
-            aria-label="Next slide"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#1E293B] shadow-md ring-1 ring-slate-200 transition hover:bg-slate-50 active:scale-95"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </button>
         </div>
 
         {/* Download App Now Banner */}
@@ -257,50 +207,12 @@ export default function AppShowcase() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="#google-play"
-                className="inline-flex items-center gap-3 rounded-xl bg-black px-5 py-3 text-white transition-transform hover:scale-105 active:scale-95 shadow-md"
-              >
-                <svg
-                  className="h-7 w-7"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M3.609 1.814L13.792 12 3.61 22.186a1.5 1.5 0 01-1.61-.247 1.51 1.51 0 01-.5-.939V3c0-.363.18-.702.5-.939a1.5 1.5 0 011.61-.247zM15.207 13.415l2.42 2.42-11.458 6.643a1.5 1.5 0 01-1.398 0l10.436-9.063zm0-2.83L4.771 1.522a1.5 1.5 0 011.398 0l11.458 6.642-2.42 2.42zM16.92 12.508l3.714 2.148a1.5 1.5 0 010 2.588l-2.876 1.662-3.13-3.13 2.292-3.268z" />
-                </svg>
-
-                <div className="text-left">
-                  <p className="text-[10px] text-slate-300 uppercase tracking-wider">
-                    GET IT ON
-                  </p>
-
-                  <p className="text-[14px] font-bold leading-tight">
-                    Google Play
-                  </p>
-                </div>
+              <a href="#google-play" className="transition-transform hover:scale-105 active:scale-95">
+                <img src="/google-play.png" alt="Get it on Google Play" className="h-12 w-auto object-contain" />
               </a>
 
-              <a
-                href="#app-store"
-                className="inline-flex items-center gap-3 rounded-xl bg-black px-5 py-3 text-white transition-transform hover:scale-105 active:scale-95 shadow-md"
-              >
-                <svg
-                  className="h-7 w-7"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.31c.67-.82 1.12-1.95.99-3.09-1.03.04-2.28.69-3.01 1.51-.62.69-1.16 1.83-1 2.92 1.15.09 2.31-.56 3.02-1.34z" />
-                </svg>
-
-                <div className="text-left">
-                  <p className="text-[10px] text-slate-300 uppercase tracking-wider">
-                    Download on the
-                  </p>
-
-                  <p className="text-[14px] font-bold leading-tight">
-                    App Store
-                  </p>
-                </div>
+              <a href="#app-store" className="transition-transform hover:scale-105 active:scale-95">
+                <img src="/app-store.png" alt="Download on the App Store" className="h-12 w-auto object-contain" />
               </a>
             </div>
           </div>
