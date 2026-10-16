@@ -128,9 +128,7 @@ export default function OpportunitySection() {
 
       <div className="relative mx-auto max-w-360 px-5 sm:px-10 lg:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-16 items-center">
-          {/* Left Column: Heading & Steps */}
           <div className="lg:col-span-6">
-            {/* Section Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-blue-200/90 bg-white px-3.5 py-1 text-[11.5px] font-bold text-[#0077FF] shadow-xs">
               <span className="h-1.5 w-1.5 rounded-full bg-[#0077FF]" />
               01 • OPPORTUNITY DISCOVERY
@@ -147,9 +145,7 @@ export default function OpportunitySection() {
               that match you, and notify you when they appear.
             </p>
 
-            {/* 3 Step Cards */}
             <div className="mt-9 space-y-3.5">
-              {/* Step 1 */}
               <div className="rounded-2xl border border-slate-200/80 bg-white p-4.5 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] transition-all hover:border-slate-300">
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex items-start gap-3.5">
@@ -161,7 +157,7 @@ export default function OpportunitySection() {
                         Set your preferences
                       </h4>
                       <p className="mt-0.5 text-[13px] text-slate-500 leading-relaxed">
-                        Tell us what you're looking for, from colleges and
+                        Tell us what you&apos;re looking for, from colleges and
                         courses to jobs, internships and gigs.
                       </p>
                     </div>
@@ -172,7 +168,6 @@ export default function OpportunitySection() {
                 </div>
               </div>
 
-              {/* Step 2 */}
               <div className="rounded-2xl border border-slate-200/80 bg-white p-4.5 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] transition-all hover:border-slate-300">
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex items-start gap-3.5">
@@ -195,7 +190,6 @@ export default function OpportunitySection() {
                 </div>
               </div>
 
-              {/* Step 3 */}
               <div className="rounded-2xl border border-slate-200/80 bg-white p-4.5 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] transition-all hover:border-slate-300">
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex items-start gap-3.5">
@@ -219,7 +213,6 @@ export default function OpportunitySection() {
               </div>
             </div>
 
-            {/* CTA Button */}
             <div className="mt-8">
               <Link
                 href="#signup"
@@ -230,7 +223,6 @@ export default function OpportunitySection() {
             </div>
           </div>
 
-          {/* Right Column: Interactive Opportunity Feed Mockup */}
           <div className="mt-12 lg:mt-0 lg:col-span-6">
             <div className="relative rounded-[32px] border border-slate-200/80 bg-white p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.05),0_1px_3px_rgba(0,0,0,0.03)]">
               {/* Header */}

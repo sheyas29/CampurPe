@@ -55,7 +55,9 @@ export default function AppShowcase() {
 
     const dx = e.changedTouches[0].clientX - touchStartX.current;
 
-    if (Math.abs(dx) > 50) (dx < 0 ? next : prev)();
+    if (Math.abs(dx) > 50) {
+      go(activeIndex + (dx < 0 ? 1 : -1));
+    }
 
     touchStartX.current = null;
   };
@@ -189,8 +191,6 @@ export default function AppShowcase() {
           </div>
         </div>
 
-        {/* Download App Now Banner */}
-
         <div className="mt-24 rounded-[32px] border border-slate-200/80 bg-gradient-to-r from-blue-50/50 via-white to-blue-50/30 p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="max-w-xl">
             <h3 className="text-[32px] font-extrabold text-[#1E293B] sm:text-[40px] leading-tight">
@@ -200,10 +200,10 @@ export default function AppShowcase() {
             <p className="mt-4 text-[15px] text-[#64748B] leading-relaxed">
               Elevate your academic journey with Campuspe, the all-in-one
               digital ecosystem designed to bridge the gap between education and
-              industry. Whether you're a student seeking your next big
+              industry. Whether you&apos;re a student seeking your next big
               internship, a college looking to empower your cohort, or a company
               scouting for top-tier talent, Campuspe streamlines the connection.
-              Your career doesn't start at graduation — it starts here.
+              Your career doesn&apos;t start at graduation — it starts here.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">

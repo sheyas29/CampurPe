@@ -72,11 +72,8 @@ export default function ResumeSection() {
           </p>
         </div>
 
-        {/* Central Interactive Upload Card Container */}
         <div className="mx-auto mt-12 max-w-[720px]">
-          {/* Big White Card */}
           <div className="relative rounded-[32px] border border-slate-200/80 bg-white p-7 sm:p-10 shadow-[0_20px_50px_rgba(0,119,255,0.05),0_1px_3px_rgba(0,0,0,0.03)]">
-            {/* Floating Top-Left Badge: 98% Match Rate (straddling left dashed border, NO black border) */}
             <div className="absolute -left-4 sm:-left-6 top-10 sm:top-12 z-20 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-[0_12px_32px_rgba(0,0,0,0.07)] transition-all hover:scale-105">
               <img
                 src="/match-rate-icon.svg"
@@ -93,7 +90,6 @@ export default function ResumeSection() {
               </div>
             </div>
 
-            {/* Floating Bottom-Right Badge: ATS Compliant (straddling right dashed border, NO black border) */}
             <div className="absolute -right-4 sm:-right-6 bottom-14 sm:bottom-16 z-20 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-[0_12px_32px_rgba(0,0,0,0.07)] transition-all hover:scale-105">
               <img
                 src="/ats-icon.svg"
@@ -110,7 +106,6 @@ export default function ResumeSection() {
               </div>
             </div>
 
-            {/* Inner Dashed Bounding Area */}
             <div
               onDragOver={handleDragOver}
               onDragLeave={handleDragLeave}
@@ -121,7 +116,6 @@ export default function ResumeSection() {
                   : 'border-[#B9D5FF] bg-white'
               }`}
             >
-              {/* Corner bracket decorative crop marks */}
               <div className="pointer-events-none absolute top-3 left-3 h-3 w-3 border-t-2 border-l-2 border-[#93C5FD]" />
               <div className="pointer-events-none absolute top-3 right-3 h-3 w-3 border-t-2 border-r-2 border-[#93C5FD]" />
               <div className="pointer-events-none absolute bottom-3 left-3 h-3 w-3 border-b-2 border-l-2 border-[#93C5FD]" />
@@ -132,11 +126,10 @@ export default function ResumeSection() {
               </h3>
 
               <p className="mx-auto mt-2 max-w-md text-[13px] sm:text-[13.5px] text-slate-500 leading-relaxed">
-                PDF, DOC, or DOCX · Up to 10MB · We'll use it to understand your skills <br className="hidden sm:inline" />
+                PDF, DOC, or DOCX · Up to 10MB · We&apos;ll use it to understand your skills <br className="hidden sm:inline" />
                 and experience.
               </p>
 
-              {/* Upload Button with upward arrow */}
               <div className="mt-5">
                 <input
                   ref={fileInputRef}
@@ -156,7 +149,6 @@ export default function ResumeSection() {
                 </button>
               </div>
 
-              {/* Drag & drop label */}
               <p className="mt-4 text-[12.5px] text-slate-400 font-normal">
                 {fileName ? (
                   <span className="font-semibold text-[#0088FF]">
@@ -167,7 +159,6 @@ export default function ResumeSection() {
                 )}
               </p>
 
-              {/* Format Pills */}
               <div className="mt-3.5 flex items-center justify-center gap-2">
                 <span className="rounded-full border border-sky-400 bg-white px-3.5 py-0.5 text-[11px] font-bold text-[#0077FF]">
                   PDF
@@ -183,9 +174,7 @@ export default function ResumeSection() {
           </div>
         </div>
 
-        {/* 4 Pipeline Step Cards Connected Row */}
         <div className="mx-auto mt-16 max-w-5xl flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-0">
-          {/* Step 1: Resume analyzed */}
           <div className="flex-1 w-full rounded-2xl border border-slate-200/80 bg-white p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] transition-all hover:border-slate-300">
             <div className="flex items-center gap-3.5">
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-emerald-300 bg-[#E8FAF0] text-emerald-500">
@@ -205,10 +194,8 @@ export default function ResumeSection() {
             </div>
           </div>
 
-          {/* Connector 1 */}
           <div className="hidden lg:block h-0.5 w-5 bg-slate-200/80 shrink-0 self-center" />
 
-          {/* Step 2: Skills matched */}
           <div className="flex-1 w-full rounded-2xl border border-slate-200/80 bg-white p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] transition-all hover:border-slate-300">
             <div className="flex items-center gap-3.5">
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-blue-200 bg-[#EFF6FF] text-[#3B82F6]">
@@ -227,10 +214,8 @@ export default function ResumeSection() {
             </div>
           </div>
 
-          {/* Connector 2 */}
           <div className="hidden lg:block h-0.5 w-5 bg-slate-200/80 shrink-0 self-center" />
 
-          {/* Step 3: Experience matched */}
           <div className="flex-1 w-full rounded-2xl border border-slate-200/80 bg-white p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] transition-all hover:border-slate-300">
             <div className="flex items-center gap-3.5">
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-purple-200 bg-[#F5F3FF] text-[#8B5CF6]">
@@ -249,10 +234,8 @@ export default function ResumeSection() {
             </div>
           </div>
 
-          {/* Connector 3 */}
           <div className="hidden lg:block h-0.5 w-5 bg-slate-200/80 shrink-0 self-center" />
 
-          {/* Step 4: 1,000+ sources searched */}
           <div className="flex-1 w-full rounded-2xl border border-slate-200/80 bg-white p-4 sm:p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] transition-all hover:border-slate-300">
             <div className="flex items-center gap-3.5">
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-blue-200 bg-[#EFF6FF] text-[#3B82F6]">

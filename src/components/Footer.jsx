@@ -63,13 +63,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" aria-label="CampusPe home" className="inline-block">
-              {/* Swap for your real logo: <img src="/logo.png" alt="CampusPe" className="h-9" /> */}
-              <span className="text-[34px] font-extrabold leading-none tracking-tight text-[#0A7CFF]">
-                CampusPe
-              </span>
-              <span className="mt-1 block text-[7px] tracking-wide text-[#0A7CFF]/80">
-                Connecting Students, Institutions &amp; Companies
-              </span>
+              <img src="/logo.svg" alt="CampusPe" className="h-9 w-auto" />
             </Link>
             <p className="mt-6 max-w-57.5 text-[16px] leading-snug text-[#1E293B]">
               From choosing a college to finding your next opportunity.

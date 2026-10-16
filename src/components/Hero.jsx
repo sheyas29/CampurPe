@@ -1,25 +1,8 @@
 'use client';
 
-// HeroSection.jsx — Next.js (App Router) + Tailwind CSS. No other dependencies.
-//
-// Usage (app/page.jsx):
-//   import HeroSection from "@/components/HeroSection";
-//   export default function Page() { return <HeroSection />; }
-//
-// Fonts (app/layout.jsx) — UI text is Inter, card titles are a bold serif:
-//   import { Inter, Source_Serif_4 } from "next/font/google";
-//   const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-//   const serif = Source_Serif_4({ subsets: ["latin"], weight: ["700"], variable: "--font-serif" });
-//   <body className={`${inter.variable} ${serif.variable} font-[family-name:var(--font-inter)]`}>
-//
-// Measurements below were taken from the 1366px Figma frame (card row = 1150px wide).
+const BLUE = '#0B8CFF';
+const LINK_BLUE = '#1A6CF0';
 
-const BLUE = '#0B8CFF'; // buttons / icons
-const LINK_BLUE = '#1A6CF0'; // "What are you looking for?"
-
-/* ------------------------------------------------------------------ */
-/* icons                                                               */
-/* ------------------------------------------------------------------ */
 const stroke = (c, w = 2) => ({
   fill: 'none',
   stroke: c,

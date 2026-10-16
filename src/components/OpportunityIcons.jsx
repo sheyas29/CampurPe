@@ -48,34 +48,18 @@ export const ClockIcon = () => (
   </svg>
 );
 
-// IIM Bangalore Emblem Logo
 export const IIMBLogo = () => (
-  <img
-    src="/Logo_ IIM Bangalore Seal SVG Replica.svg"
-    alt="iimb"
-
-  />
+  <img src="/Logo_ IIM Bangalore Seal SVG Replica.svg" alt="IIM Bangalore" className="h-6 w-auto" />
 );
 
-// Google 4-Color G Logo
 export const GoogleLogo = () => (
-  <img
-    src="/Logo_ Google G Logo Replica.svg"
-    alt="google"
-
-  />
+  <img src="/Logo_ Google G Logo Replica.svg" alt="Google" className="h-6 w-auto" />
 );
 
-// Notion N Logo
 export const NotionLogo = () => (
-  <img
-    src="/Logo_ Notion N Logo Replica.svg"
-    alt="notion"
-
-  />
+  <img src="/Logo_ Notion N Logo Replica.svg" alt="Notion" className="h-6 w-auto" />
 );
 
-// Hand-drawn curved arrow below feed mockup
 export const CurvedArrowIcon = () => (
   <svg
     className="h-8 w-8 text-[#7C3AED] shrink-0"

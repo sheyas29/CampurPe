@@ -15,22 +15,18 @@ export default function CollegesSection() {
 
       <div className="relative mx-auto max-w-360 px-5 sm:px-10 lg:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-16 items-start">
-          {/* Left Column: Heading & CTA */}
           <div className="lg:col-span-5">
-            {/* Section Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-blue-200/80 bg-white px-3.5 py-1 text-[11.5px] font-bold text-[#0084FF] shadow-xs">
               <span className="h-1.5 w-1.5 rounded-full bg-[#0084FF]" />
               02 • FOR COLLEGES
             </div>
 
-            {/* Heading */}
             <h2 className="mt-6 text-[38px] font-extrabold tracking-tight text-[#1E293B] sm:text-[48px] lg:text-[52px] leading-[1.12]">
               Get Discovered <br />
               by <span className="text-[#0084FF]">Students and</span> <br />
               <span className="text-[#0084FF]">Recruiters.</span>
             </h2>
 
-            {/* Description */}
             <p className="mt-6 text-[15px] sm:text-[15.5px] text-[#64748B] leading-relaxed max-w-md">
               Put your college in front of students searching for the right
               course and recruiters looking for the right talent. CampusPe helps
@@ -38,7 +34,6 @@ export default function CollegesSection() {
               opportunities.
             </p>
 
-            {/* CTA Button */}
             <div className="mt-8">
               <Link
                 href="#list-college"
@@ -49,9 +44,7 @@ export default function CollegesSection() {
             </div>
           </div>
 
-          {/* Right Column: 4 Feature Cards */}
           <div className="mt-12 lg:mt-0 lg:col-span-7 space-y-4">
-            {/* Card 1 */}
             <div className="rounded-2xl border border-slate-100 bg-white p-5 sm:p-6 shadow-[0_2px_14px_rgba(0,0,0,0.02)] transition-all hover:border-slate-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-5">
                 <div>
@@ -74,7 +67,6 @@ export default function CollegesSection() {
                 </div>
                 <div className="flex flex-col items-end gap-2 shrink-0 pt-0.5">
                   <span className="rounded-[8px] border border-[#86EFAC] bg-[#F0FDF4] px-2.5 py-1 text-[11px] font-semibold text-[#16A34A] inline-flex items-center gap-1.5 whitespace-nowrap">
-                    {/* BadgeCheck SVG */}
                     <svg
                       className="w-3.5 h-3.5 text-[#16A34A]"
                       viewBox="0 0 24 24"
@@ -96,7 +88,6 @@ export default function CollegesSection() {
               </div>
             </div>
 
-            {/* Card 2 */}
             <div className="rounded-2xl border border-slate-100 bg-white p-5 sm:p-6 shadow-[0_2px_14px_rgba(0,0,0,0.02)] transition-all hover:border-slate-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-5">
                 <div>
@@ -119,7 +110,6 @@ export default function CollegesSection() {
                 </div>
                 <div className="flex flex-col items-end gap-1.5 shrink-0 pt-0.5">
                   <span className="rounded-[8px] border border-[#BFDBFE] bg-[#EFF6FF] px-2.5 py-1 text-[11.5px] font-semibold text-[#2563EB] inline-flex items-center gap-1.5 whitespace-nowrap">
-                    {/* MessagesSquare SVG */}
                     <svg
                       className="w-3.5 h-3.5 text-[#2563EB]"
                       viewBox="0 0 24 24"
@@ -145,7 +135,6 @@ export default function CollegesSection() {
               </div>
             </div>
 
-            {/* Card 3 */}
             <div className="rounded-2xl border border-slate-100 bg-white p-5 sm:p-6 shadow-[0_2px_14px_rgba(0,0,0,0.02)] transition-all hover:border-slate-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-5">
                 <div>
@@ -167,7 +156,6 @@ export default function CollegesSection() {
                 </div>
                 <div className="flex flex-col items-end gap-2 shrink-0 pt-0.5">
                   <span className="rounded-[8px] border border-[#E9D5FF] bg-[#FAF5FF] px-2.5 py-1 text-[11.5px] font-semibold text-[#8B5CF6] inline-flex items-center gap-1.5 whitespace-nowrap">
-                    {/* Building2 SVG */}
                     <svg
                       className="w-3.5 h-3.5 text-[#8B5CF6]"
                       viewBox="0 0 24 24"
@@ -188,7 +176,6 @@ export default function CollegesSection() {
                     500+ Hiring Partners
                   </span>
                   <span className="rounded-[8px] border border-[#C7D2FE] bg-[#EEF2FF] px-2.5 py-1 text-[11.5px] font-semibold text-[#4F46E5] inline-flex items-center gap-1.5 self-end whitespace-nowrap">
-                    {/* Network SVG */}
                     <svg
                       className="w-3.5 h-3.5 text-[#4F46E5]"
                       viewBox="0 0 24 24"
@@ -210,7 +197,6 @@ export default function CollegesSection() {
               </div>
             </div>
 
-            {/* Card 4 */}
             <div className="rounded-2xl border border-slate-100 bg-white p-5 sm:p-6 shadow-[0_2px_14px_rgba(0,0,0,0.02)] transition-all hover:border-slate-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-5">
                 <div>
